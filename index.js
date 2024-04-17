@@ -3,7 +3,7 @@ window.addEventListener("scroll", function() {
     if (window.scrollY > navbar.offsetTop) {
       navbar.style.top = '0';
     } else {
-      navbar.style.top = '-100px';
+      navbar.style.top = '10px';
     }
   });
   

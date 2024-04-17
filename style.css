@@ -21,8 +21,7 @@ body {
     border-radius: 5px;
     margin-top: 10px;
     text-align: center;
-    position: fixed;
-    width: 100%;
+    position: sticky;
     z-index: 999;
     transition: top 0.3s;
 }
