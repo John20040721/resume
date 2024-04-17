@@ -1,0 +1,511 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f2f7;
+    color: #333;
+    font-family: 標楷體;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.navbar {
+    background-color: #3F5259;
+    padding: 10px;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(../11144248/img/111442483.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.myphoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myphoto img {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.aboutme {
+    text-align: center;
+}
+
+.aboutme-content {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: #FFF;
+}
+
+.section {
+    margin-bottom: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.section-header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.section-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.section-content {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.section-content p {
+    margin: 0;
+    color: #666;
+}
+
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/*教育背景*/
+
+.education-card {
+    background-color: #3F5259;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s;
+    text-align: center;
+    color: #FFF;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+/* 比賽與活動 */
+
+.photo1 {
+    width: 50%;
+    height: 50%;
+}
+
+.photo1 {
+    transition: transform 0.3s;
+}
+
+.photo1:hover {
+    transform: scale(1.1);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card,
+.card2 {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: floatAnimation 3s ease infinite alternate;
+    padding: 20px;
+    margin: 20px;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.card {
+    background-color: #bdc2c4;
+}
+
+.card2 {
+    background-color: #3F5259;
+}
+
+.card:hover,
+.card:focus {
+    animation: none;
+}
+
+.card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card-header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #a3a8aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.card-button:hover,
+.card-button:focus {
+    background-color: #1b2224;
+}
+
+.card:hover,
+.card2:hover {
+    background-color: rgb(185, 183, 187);
+}
+
+
+/*證照*/
+.certificate-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.certificate-content {
+    text-align: center;
+}
+
+.certificate-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(104, 98, 98);
+}
+
+.certificate-card1,
+.certificate-card2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.5s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    animation: scaleAnimation 4s ease infinite alternate;
+}
+
+.certificate-card1 {
+    background-color: #3F5259;
+    animation-delay: 0s;
+}
+
+.certificate-card2 {
+    background-color: #bdc2c4;
+    animation-delay: 2s;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.certificate-card1:hover,
+.certificate-card2:hover {
+    animation: none;
+}
+
+.certificatetext {
+    text-align: center;
+}
+
+
+
+.skills {
+    font-size: 24px;
+    text-align: center;
+}
+
+.charttext {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 50px;
+
+}
+
+
+/*圓餅圖*/
+
+.skill {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4%;
+    margin-bottom: 10%;
+}
+
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4,
+.circle-wrap .circle .fill-5 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #ACACAC;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+.mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #3F5259;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+    animation: fill-1 ease-in-out 5s;
+    transform: rotate(50deg);
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+.mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #3F5259;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+    animation: fill-2 ease-in-out 5s;
+    animation-iteration-count: infinite;
+    transform: rotate(90deg);
+}
+
+@keyframes fill-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.mask .fill-3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #3F5259;
+}
+
+.mask.full-3,
+.circle .fill-3 {
+    animation: fill-3 ease-in-out 5s;
+    transform: rotate(110deg);
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(110deg);
+    }
+}
+
+.mask .fill-4 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #3F5259;
+}
+
+.mask.full-4,
+.circle .fill-4 {
+    animation: fill-4 ease-in-out 5s;
+    transform: rotate(90deg);
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill-4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.mask .fill-5 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #3F5259;
+}
+
+.mask.full-5,
+.circle .fill-5 {
+    animation: fill-5 ease-in-out 5s;
+    transform: rotate(170deg);
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill-5 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(170deg);
+    }
+}
+
+.contact img {
+    width: 5%;
+    height: 5%;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 20PX;
+}
+
+/*footer*/
+
+footer {
+    padding: 10px;
+    align-items: center;
+    width: 820px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #3F5259;
+    color: #FFF;
+}
